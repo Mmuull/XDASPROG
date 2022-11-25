@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        fieldset{
+            width: 30%;
+            margin-top: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            border-color: transparent;
+            background-color: white;
+            padding: 20px;
+        }
+        img{
+            width: 150px; height: 130x;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        form{
+            padding-left: 20px;
+        }
+        input.text{
+            width: 90%; height: 30px;
+            border-radius: 5px;
+            border-color: darkgrey;
+        }
+        input.date{
+            width: 116px; height: 20px;
+            border-radius: 5px;
+        }
+        textarea{
+            border-radius: 10px;
+        }
+        input.submit{
+            width: 90px; height: 40px;
+            border-radius: 5px;
+            border-color: transparent;
+            background-color: #0291da;
+            color: white;
+            margin-left: 70%;
+            cursor: pointer;
+        }
+        div.bottom{
+            text-align: center;
+        }
+    </style>
+    <title>Challenge 2</title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif; background-color:whitesmoke;">
+    <!-- <center> -->       
+        <fieldset>
+            <div class="top">
+                <a href=""><img src="alfalah.png" alt="logo-alfalah"></a>
+                <h2 style="text-align: center;">SIGN UP</h2>
+            </div>
+            <form action="ChallengeForm.html" method="post">
+                <div class="input">
+                    <label for="namadepan">Nama Depan<span style="color: red;">*</span></label><br>
+                    <input class="text" type="text" name="namadepan" id="namadepan" placeholder="Nama Depan" required><br><br>
+                </div>
+                <div class="input">
+                    <label for="namabelakang">Nama Belakang<span style="color: red;">*</span></label><br>  
+                    <input class="text" type="text" name="namadepan" id="namadepan" placeholder="Nama Belakang" required><br><br>    
+                </div>
+                <div class="input">
+                    <label for="tgllahir">Tanggal Lahir<span style="color: red;">*</span></label><br>
+                    <input class="date" type="number" name="tgl" id="tgl" min="1" max="31" placeholder="tanggal" required>
+                    <input class="date" type="number" name="bln" id="bln" min="1" max="12" placeholder="bulan" required>
+                    <input class="date" type="number" name="thn" id="thn" min="2000" max="2010" placeholder="tahun" required>
+                    <br><br>
+                </div>
+                <div class="input">
+                    <label for="alamat">Alamat</label><br>
+                    <textarea name="alamat" id="alamat" cols="49" rows="5"></textarea><br><br>
+                </div>
+                <div class="input">
+                    <label for="email">E-mail<span style="color: red;">*</span></label><br>  
+                    <input class="text" type="email" name="email" id="email" placeholder="yourname@gmail.com" required><br><br>    
+                </div>
+                <div class="input">
+                    <label for="password1">Kata Sandi<span style="color: red;">*</span></label><br>  
+                    <input class="text" type="password" name="password1" id="password1" placeholder="Kata Sandi" required><br><br>    
+                </div>
+                <div class="input">
+                    <label for="password2">Konfirmasi Kata Sandi<span style="color: red;">*</span></label><br>  
+                    <input class="text" type="password" name="password2" id="password2" placeholder="Konfirmasi Kata Sandi" required>
+                </div>
+                <div class="bottom">
+                    <p>Sudah menjadi member? <a href="ChallengeForm.html">Login</a></p><br>
+                </div>
+                <div class="submit">
+                    <input class="submit" type="submit" value="Daftar"><br>
+                </div>
+            </form>
+        </fieldset>
+    <!-- </center> -->
+</body>
+</html>

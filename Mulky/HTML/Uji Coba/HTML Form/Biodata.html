@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Sekolah</title>
+    <style>
+        img{
+            border-radius: 15px;
+        }
+        table{
+            width: 45%;
+        }
+        td{
+            width: 500px;
+            padding: 10px;
+            vertical-align: top;
+            line-height: 20px;
+
+        }
+        td.label{
+            width: 40%;
+            color: #467407;
+            font-weight: bold;
+            line-height: 20px;
+        }
+        h4{
+            color: #467407;
+            font-weight: bold;
+        }
+        sub{
+            font-weight: lighter;
+        }
+        select{
+            width: 250px;
+            height: 30px;
+        }
+        button{
+            width: 100px; 
+            height: 30px; 
+            background-color: #476441;    
+        }
+        .inputtext{
+            width: 380px;
+            height: 25px;
+        }
+        .inputnumber{
+            width: 250px;
+            height: 25px;
+        }
+        
+
+    </style>
+</head>
+<body style="background-color: #d1f2a5; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: #467407;">
+    
+    <center>
+
+    <img src="Banner.jpg" width="30%">
+
+    <form action="https://youtu.be/BBJa32lCaaY">
+
+        <table border="1">        
+
+        <h2>Bio Data</h2>
+
+            <tr>
+                <td class="label"><label for="nomordaftar">Nomor Pendaftaran</label></td>
+                <td >
+                    <input type="number" class="inputnumber" id="nomordaftar" name="nomordaftar" placeholder="Kosongkan"><br>
+                    <!-- <p style="font-size: 12px;line-height: 1px;">Diisi panitia pada saat validasi data</p> -->
+                    <sub>Diisi panitia pada saat validasi data</sub>
+                </td>
+                    
+            </tr>
+
+            <tr>    
+                <td colspan="2"><h4>A. IDENTITAS CALON PESERTA DIDIK</h4></td>
+            </tr>
+
+            <tr>
+                    <td class="label"><label for="name">Nama Lengkap <sub style="color: red;vertical-align: top;">*</sub></label></td>
+                <td >
+                    <input type="text" class="inputtext" id="name" name="name" placeholder=""><br>
+                    <sub>Tulis nama lengkap sesuai ijazah SMP/MTs</sub><br>
+                </td>
+            
+            </tr>
+
+            <tr>
+                
+                    <td class="label"><label for="jeniskelamin">Jenis Kelamin <sub style="color: red;vertical-align: top;">*</sub></label></td>
+                <td id="jeniskelamin">
+                    <input type="radio" id="Laki-laki" name="fav_language" value="Laki-laki"><label for="Laki-laki">Laki-laki</label>
+                    &emsp;&emsp;&emsp;&emsp;
+                    <input type="radio" id="Perempuan" name="fav_language" value="Perempuan"><label for="Perempuan">Perempuan</label><br>
+                </td>
+                    
+            </tr>
+
+            <tr>
+                
+                <td class="label"><label for="nisn">NISN</label></td>
+                <td >
+                    <input type="number" class="inputnumber" id="nisn" name="nisn" placeholder="contoh: 8924757856"><br>
+                    <sub>isi 10 digit angka NISN</sub><br>
+                </td>
+                
+            </tr>
+
+            <tr>
+                
+                <td class="label"><label for="nik">NIK</label></td>
+                <td >
+                    <input type="number" class="inputnumber" id="nik" name="nik" placeholder="contoh: 87236596865896"><br>
+                    <sub>isi 16 digit angka NIK (bisa dilihat di KK)</sub><br>
+                </td>
+                
+                
+            </tr>
+
+            <tr>
+                
+                    <td class="label"><label for="tempatlahir">Tempat Lahir <sub style="color: red;vertical-align: top;">*</sub></label></td>
+                <td ><input type="text" class="inputtext" id="tempatlahir" name="tempatlahir"><br></td>
+                
+            </tr>
+
+            <tr>
+                
+                <td class="label"><label for="tanggallahir">Tanggal Lahir <sub style="color: red;vertical-align: top;">*</sub></label></td>
+                <td><input type="date" id="tanggallahir" name="tanggallahir" style="width: 200px; height:30px;"></td>
+                
+            </tr>
+
+            <tr>
+                
+                <td class="label" style="vertical-align: top;"><label for="agama">Agama <sub style="color: red;vertical-align: top;">*</sub></label></td>
+                <td id="agama">
+                    <input type="radio" id="Islam" name="fav_language" value="Islam"><label for="Islam">Islam</label>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;
+                    <input type="radio" id="Budha" name="fav_language" value="Budha"><label for="Budha">Budha</label><br>
+                    <input type="radio" id="Kristen" name="fav_language" value="Kristen"><label for="Kristen">Kristen</label>
+                    &emsp;&emsp;&emsp;&ensp;&ensp;&nbsp;
+                    <input type="radio" id="Katolik" name="fav_language" value="Katolik"><label for="Katolik">Katolik</label><br>
+                    <input type="radio" id="Hindu" name="fav_language" value="Hindu"><label for="Hindu">Hindu</label><br>
+                </td>
+                    
+            </tr> 
+            
+            <tr>
+                
+                <td class="label" style="vertical-align: top;"><label for="fname">Alamat Rumah <sub style="color: red;vertical-align: top;">*</sub></label></td>
+                <td>
+                    <textarea name="message" rows="6" cols="50"></textarea><br>
+                    <sub>tulis alamat lengkap</sub><br>
+                </td>
+                
+            </tr>
+
+            <tr>
+                
+                <td class="label"><label for="fname">No. Telp. /HP /WA</label></td>
+                <td >
+                    <input type="number" class="inputnumber" id="fname" name="fname" placeholder="contoh: 0827 123 XXXX"><br>
+                    <sub>nomor yang bisa di hubungi</sub><br>
+                </td>
+                
+            </tr>
+
+            <tr>
+                
+                <td class="label"><label for="fname">Pas Photos Terbaru</label></td>
+                <td>
+                    <input class="button" type="file" id="myfile" name="myfile"><br>
+                    <sub>Background Merah atau Biru sesuai Tahun Lahir</sub><br>
+                </td>
+                
+            </tr>
+
+            <tr>
+                
+                <td class="label"><label for="fname">Apakah anda penerima kartu KPS/KIP/PIP</label></td>
+                <td>
+                    <input type="radio" id="Iya" name="fav_language" value="Iya"><label for="Iya">Iya</label>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;
+                    <input type="radio" id="Tidak" name="fav_language" value="Tidak"><label for="Tidak">Tidak</label><br>
+                </td>
+                    
+            </tr>
+
+            <tr>
+                
+                <td class="label"><label for="fname">Nomor KPS/KIP/PIP</label></td>
+                <td >
+                    <input type="number" class="inputnumber" id="fname" name="fname"><br>
+                    <sub>Tulis nomor salah satu nomor KPS/KIP/PIP yang dimiliki</sub><br>
+                </td>
+                
+            </tr>
+
+            <tr>
+                
+                <td class="label"><label for="fname">Apakah anda layak mendapat BSM</label></td>
+                <td>
+                    <input type="radio" id="Iya1" name="fav_language" value="Iya1"><label for="Iya1">Iya</label>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;
+                    <input type="radio" id="Tidak1" name="fav_language" value="Tidak1"><label for="Tidak1">Tidak</label><br></td>
+                    
+            </tr>
+
+            <tr>
+                
+                <td class="label"><label for="fname">Alasan layak mendapatkan BSM</label></td>
+                <td><select name="asu" id="asu">
+                    <optgroup label="ha? apa?">
+                        <option value="Karena saya ganteng/cantik bahenol">Karena saya ganteng/cantik</option>
+                        <option value="Karena saya pintar awokawokawok">Karena saya pintar awokawokawok</option>
+                    </optgroup>    
+                </select></td>
+                
+            </tr>
+
+            <tr>
+                
+                <td class="label"><label for="fname">Rencana tinggal</label></td>
+                <td><select name="asu" id="asu">
+                    <optgroup label="tempat">
+                        <option value="Bogor pelangi">Bogor pelangi</option>
+                        <option value="Bandung dingin">Bandung dingin</option>
+                    </optgroup>    
+                </select></td>
+                
+            </tr>
+
+            <tr>
+                
+                <td class="label"><label for="fname">Rencana alat transportasi</label></td>
+                <td><select name="asu" id="asu">
+                    <optgroup label="kendaraan">
+                        <option value="Karpet terbang">Karpet terbang</option>
+                        <option value="Asu kayang">Asu kayang</option>
+                    </optgroup>    
+                </select></td>
+                
+            </tr>
+
+            <tr>
+                <td colspan="2"><h4>B. DATA ORANG TUA / WALI</h4></td>
+            </tr>
+
+            <tr>
+                
+                <td class="label"><label for="fname">Nama Ayah <sub style="color: red;vertical-align: top;">*</sub></label></td>
+                <td ><input type="text" class="inputtext" id="fname" name="fname"><br></td>
+                
+            </tr>
+
+            <tr>
+                
+                <td class="label"><label for="fname">Tahun Lahir Ayah</label></td>
+                <td><select name="asu" id="asu">
+                    <optgroup label="Tahun lahir">
+                        <option value="1965">1965</option>
+                        <option value="1966">1966</option>
+                        <option value="1967">1967</option>
+                        <option value="1968">1968</option>
+                    </optgroup>    
+                </select></td>
+                
+            </tr>
+
+            <tr>
+                
+                <td class="label"><label for="fname">Pendidikan Ayah</label></td>
+                <td><select name="asu" id="asu">
+                    <optgroup label="Pendidikan">
+                        <option value="SMP">SMP</option>
+                        <option value="SMA">SMA</option>
+                        <option value="KULIAH">KULIAH</option>
+                    </optgroup>    
+                </select></td>
+                
+            </tr>
+
+            <tr>
+                
+                <td class="label"><label for="fname">Keadaan Ayah <sub style="color: red;vertical-align: top;">*</sub></label></td>
+                <td>
+                    <input type="radio" id="Masih hidup" name="fav_language" value="Masih hidup"><label for="Masih hidup">Masih hidup</label>
+                    <span style="margin-left: 20px;"></span>
+                    <input type="radio" id="Sudah meninggal" name="fav_language" value="Sudah meninggal"><label for="Sudah meninggal">Sudah meninggal</label><br></td>
+                    
+            </tr>
+
+            <tr>
+                
+                <td class="label" style="vertical-align: top;"><label for="fname">Pekerjaan Ayah</label></td>
+                <td>
+                    <input type="radio" id="PNS" name="fav_language" value="PNS"><label for="PNS">PNS</label>
+                    <span style="margin-left: 75px;"></span>
+                    <input type="radio" id="Petani" name="fav_language" value="Petani"><label for="Petani">Petani</label><br>
+                    <input type="radio" id="Honorer" name="fav_language" value="Honorer"><label for="Honorer">Honorer</label>
+                    <span style="margin-left: 49px;"></span>
+                    <input type="radio" id="Karyawan Swasta" name="fav_language" value="Karyawan Swasta"><label for="Karyawan Swasta">Karyawan Swasta</label><br>
+                    <input type="radio" id="Buruh" name="fav_language" value="Buruh"><label for="Buruh">Buruh</label>
+                    <span style="margin-left: 63px;"></span>
+                    <input type="radio" id="Wirawasta" name="fav_language" value="Wirawasta"><label for="Wirawasta">Wirawasta</label><br>
+                    <input type="radio" id="Tidak bekerja" name="fav_language" value="Tidak bekerja"><label for="Tidak bekerja">Tidak bekerja</label>
+                    <span style="margin-left: 11px;"></span>
+                    <input type="radio" id="DLL" name="fav_language" value="DLL"><label for="DLL">DLL</label><br>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                
+                <td class="label"><label for="fname">Penghasilan Ayah</label></td>
+                <td><select name="asu" id="asu">
+                    <optgroup label="Penghasilan">
+                        <option value="Rp.5000.000">Rp.500.000</option>
+                        <option value="Rp.1000.000">Rp.1000.000</option>
+                        <option value="Rp.10.000.000">Rp.10.000.000</option>
+                    </optgroup>    
+                </select></td>
+                
+            </tr>
+
+            <tr>
+                
+                <td  class="label" style="vertical-align: top;"><label for="fname">Alamat Ayah </label></td>
+                <td><textarea name="message" rows="6" cols="50"></textarea></td>
+                
+            </tr>
+
+            <tr>
+                
+                <td class="label"><label for="fname">Nama Ibu <sub style="color: red;vertical-align: top;">*</sub></label></td>
+                <td ><input type="text" class="inputtext" id="fname" name="fname"><br></td>
+                
+            </tr>
+
+            <tr>
+                
+                <td class="label"><label for="fname">Tahun Lahir Ibu</label></td>
+                <td><select name="asu" id="asu">
+                    <optgroup label="Tahun lahir">
+                        <option value="1965">1965</option>
+                        <option value="1966">1966</option>
+                        <option value="1967">1967</option>
+                        <option value="1968">1968</option>
+                    </optgroup>    
+                </select></td>
+                
+            </tr>
+
+            <tr>
+                
+                <td class="label"><label for="fname">Pendidikan Ibu</label></td>
+                <td><select name="asu" id="asu">
+                    <optgroup label="Pendidikan">
+                        <option value="SMP">SMP</option>
+                        <option value="SMA">SMA</option>
+                        <option value="KULIAH">KULIAH</option>
+                    </optgroup>    
+                </select></td>
+                
+            </tr>
+
+            <tr>
+                
+                <td class="label"><label for="fname">Keadaan Ibu <sub style="color: red;vertical-align: top;">*</sub></label></td>
+                <td><input type="radio" id="Masih hidup" name="fav_language" value="Masih hidup"><label for="Masih hidup">Masih hidup</label>
+                    <input type="radio" id="Sudah meninggal" name="fav_language" value="Sudah meninggal"><label for="Sudah meninggal">Sudah meninggal</label><br></td>
+                    
+            </tr>
+
+            <tr>
+                
+                <td  class="label" style="vertical-align: top;"><label for="fname">Pekerjaan Ibu</label></td>
+                <td>
+                    <input type="radio" id="PNS" name="fav_language" value="PNS"><label for="PNS">PNS</label>
+                    <span style="margin-left: 75px;"></span>
+                    <input type="radio" id="Ibu Rumah Tangga" name="fav_language" value="Ibu Rumah Tangga"><label for="Ibu Rumah Tangga">Ibu Rumah Tangga</label><br>
+                    <input type="radio" id="Honorer" name="fav_language" value="Honorer"><label for="Honorer">Honorer</label>
+                    <span style="margin-left: 49px;"></span>
+                    <input type="radio" id="Karyawan Swasta" name="fav_language" value="Karyawan Swasta"><label for="Karyawan Swasta">Karyawan Swasta</label><br>
+                    <input type="radio" id="Buruh" name="fav_language" value="Buruh"><label for="Buruh">Buruh</label>
+                    <span style="margin-left: 63px;"></span>
+                    <input type="radio" id="Wirawasta" name="fav_language" value="Wirawasta"><label for="Wirawasta">Wirawasta</label><br>
+                    <input type="radio" id="Tidak bekerja" name="fav_language" value="Tidak bekerja"><label for="Tidak bekerja">Tidak bekerja</label>
+                    <span style="margin-left: 11px;"></span>
+                    <input type="radio" id="DLL" name="fav_language" value="DLL"><label for="DLL">DLL</label><br>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                
+                <td class="label"><label for="fname">Penghasilan Ibu</label></td>
+                <td><select name="asu" id="asu">
+                    <optgroup label="Penghasilan">
+                        <option value="Rp.5000.000">Rp.500.000</option>
+                        <option value="Rp.1000.000">Rp.1000.000</option>
+                        <option value="Rp.10.000.000">Rp.10.000.000</option>
+                    </optgroup>    
+                </select></td>
+                
+            </tr>
+
+            <tr>
+                
+                <td  class="label" style="vertical-align: top;"><label for="fname">Alamat Ibu</label></td>
+                <td><textarea name="message" rows="6" cols="50"></textarea></td>
+                
+            </tr>
+
+            <tr>
+                
+                <td class="label"><label for="fname">Nama Wali</label></td>
+                <td ><input type="text" class="inputtext" id="fname" name="fname"><br></td>
+                
+            </tr>
+
+            <tr>
+                
+                <td class="label"><label for="fname">Tahun Lahir Wali</label></td>
+                <td><select name="asu" id="asu">
+                    <optgroup label="Tahun lahir">
+                        <option value="1965">1965</option>
+                        <option value="1966">1966</option>
+                        <option value="1967">1967</option>
+                        <option value="1968">1968</option>
+                    </optgroup>    
+                </select></td>
+                
+            </tr>
+
+            <tr>
+                
+                <td class="label"><label for="fname">Pendidikan Wali</label></td>
+                <td><select name="asu" id="asu">
+                    <optgroup label="Pendidikan">
+                        <option value="SMP">SMP</option>
+                        <option value="SMA">SMA</option>
+                        <option value="KULIAH">KULIAH</option>
+                    </optgroup>    
+                </select></td>
+                
+            </tr>
+
+            <tr>
+                
+                <td class="label"><label for="fname">Keadaan Wali </label></td>
+                <td><input type="radio" id="Masih hidup" name="fav_language" value="Masih hidup"><label for="Masih hidup">Masih hidup</label>
+                    <input type="radio" id="Sudah meninggal" name="fav_language" value="Sudah meninggal"><label for="Sudah meninggal">Sudah meninggal</label><br></td>
+                    
+            </tr>
+
+            <tr>
+                
+                <td  class="label" style="vertical-align: top;"><label for="fname">Pekerjaan Wali</label></td>
+                <td>
+                    <input type="radio" id="PNS" name="fav_language" value="PNS"><label for="PNS">PNS</label>
+                    <span style="margin-left: 75px;"></span>
+                    <input type="radio" id="Petani" name="fav_language" value="Petani"><label for="Petani">Petani</label><br>
+                    <input type="radio" id="Honorer" name="fav_language" value="Honorer"><label for="Honorer">Honorer</label>
+                    <span style="margin-left: 49px;"></span>
+                    <input type="radio" id="Karyawan Swasta" name="fav_language" value="Karyawan Swasta"><label for="Karyawan Swasta">Karyawan Swasta</label><br>
+                    <input type="radio" id="Buruh" name="fav_language" value="Buruh"><label for="Buruh">Buruh</label>
+                    <span style="margin-left: 63px;"></span>
+                    <input type="radio" id="Wirawasta" name="fav_language" value="Wirawasta"><label for="Wirawasta">Wirawasta</label><br>
+                    <input type="radio" id="Tidak bekerja" name="fav_language" value="Tidak bekerja"><label for="Tidak bekerja">Tidak bekerja</label>
+                    <span style="margin-left: 11px;"></span>
+                    <input type="radio" id="DLL" name="fav_language" value="DLL"><label for="DLL">DLL</label><br>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                
+                <td class="label"><label for="fname">Penghasilan Wali</label></td>
+                <td><select name="asu" id="asu">
+                    <optgroup label="Penghasilan">
+                        <option value="Rp.5000.000">Rp.500.000</option>
+                        <option value="Rp.1000.000">Rp.1000.000</option>
+                        <option value="Rp.10.000.000">Rp.10.000.000</option>
+                    </optgroup>    
+                </select></td>
+                
+            </tr>
+
+            <tr>
+                
+                <td  class="label" style="vertical-align: top;"><label for="fname">Alamat Wali</label></td>
+                <td><textarea name="message" rows="6" cols="50"></textarea></td>
+                
+            </tr>
+
+            <tr>
+                
+                <td colspan="2"><h4>C. DATA PERIODIK</h4></td>
+                
+            </tr>
+
+            <tr>
+                
+                    <td class="label"><label for="fname">Berat Badan (kg)</label></td>
+                    <td ><input type="number" class="inputnumber" id="fname" name="fname" placeholder="contoh: 35"><br></td>
+                
+            </tr>
+
+            <tr>
+                
+                    <td class="label"><label for="fname">Tinggi Badan (cm)</label></td>
+                    <td ><input type="number" class="inputnumber" id="fname" name="fname" placeholder="contoh: 160"><br></td>
+                
+            </tr>
+
+            <tr>
+                
+                    <td class="label"><label for="fname">Jarak Tempat Tinggal Ke Sekolah(km)</label></td>
+                    <td ><input type="number" class="inputnumber" id="fname" name="fname" placeholder="contoh: 0.5"><br></td>
+                
+            </tr>
+
+            <tr>
+                
+                    <td class="label"><label for="fname">Waktu Tempuh Ke Sekolah (menit)</label></td>
+                    <td ><input type="number" class="inputnumber" id="fname" name="fname" placeholder="contoh: 1 jam ditulis 60"><br></td>
+                
+            </tr>
+
+            <tr>
+                
+                    <td class="label"><label for="fname">Anak Ke ...</label></td>
+                    <td ><input type="number" class="inputnumber" id="fname" name="fname"><br></td>
+                
+            </tr>
+
+            <tr>
+                
+                    <td class="label"><label for="fname">Jumlah Saudara Kandung (orang)</label></td>
+                    <td ><input type="number" class="inputnumber" id="fname" name="fname"><br></td>
+                
+            </tr>
+
+            <tr>
+                
+                    <td colspan="2"><h4>D. DATA AKADEMIK</h4></td>
+                
+            </tr>
+
+            <tr>
+                
+                    <td class="label"><label for="fname">Nama Sekolah Asal SMP/SMK <sub style="color: red;vertical-align: top;">*</sub></label></td>
+                    <td ><input type="text" class="inputtext" id="fname" name="fname"><br></td>
+                
+            </tr>
+
+            <tr>
+                
+                <td style="vertical-align: top;"><label for="fname">Alamat Sekolah Asal <sub style="color: red;vertical-align: top;">*</sub></label></td>
+                <td><textarea name="message" rows="6" cols="50"></textarea></td>
+                
+            </tr>
+
+            <tr>
+                
+                    <td class="label"><label for="fname">No Peserta Ujian SMP/MTs</label></td>
+                    <td ><input type="number" class="inputnumber" id="fname" name="fname" placeholder="contoh: 1-12-34-56-009-160-7"><br></td>
+                
+            </tr>    
+
+            <tr>
+                
+                    <td class="label"><label for="fname">No. Seri Ijazah SMP/MTs</label></td>
+                    <td ><input type="number" class="inputnumber" id="fname" name="fname" placeholder="contoh: DN-09 DI 4356447"><br></td>
+                
+            </tr>
+
+            <tr>
+                
+                    <td class="label"><label for="fname">No. Seri Ijazah SMP/MTs</label></td>
+                    <td ><input type="number" class="inputnumber" id="fname" name="fname" placeholder="contoh: DN-09 DI 3463535"><br></td>
+                
+            </tr>
+            
+            <tr>
+                
+                    <td class="label"><label for="fname">Tahun Kelulusan SMP/MTs</label></td>
+                    <td ><input type="number" class="inputnumber" id="fname" name="fname"><br></td>
+                
+            </tr>
+
+            <tr>
+                
+                    <td colspan="2"><h4>E. KELENGKAPAN PERSYARATAN</h4></td>
+                
+            </tr>
+
+            <tr>
+                
+                <td class="label" style="vertical-align: top;"><label for="fname">Berkas persyaratan yang dilampirkan</label></td>
+                <td style="line-height: 30px;">
+                    <input type="checkbox" id="name1" name="name1" value="SHUN">
+                    <label for="name1">Asli SHUN/SKHUN Sementara (*jika sudah Terbit)</label><br>
+                    <input type="checkbox" id="name2" name="name2" value="Ijazah">
+                    <label for="name2">Fotocopy Ijazah /STTB dilegalisir (*jika sudah Terbit)</label><br>
+                    <input type="checkbox" id="name3" name="name3" value="Rapot">
+                    <label for="name3">Fotocopy Rapot Semester 1 s/d 5</label><br>
+                    <input type="checkbox" id="name4" name="name4" value="Surat">
+                    <label for="name4">Surat Kelulusan Asli</label><br>
+                    <input type="checkbox" id="name5" name="name5" value="Photo">
+                    <label for="name5">Pas Photo 3 x 4 berwarna</label><br>
+                    <input type="checkbox" id="name6" name="name6" value="KK">
+                    <label for="name6">Fotocopy KK</label><br>
+                </td> 
+                
+            </tr>
+
+            <tr>
+                
+                    <td colspan="2"><h4>F. PILIHAN JURUSAN/PEMINATAN</h4></td>
+                
+            </tr>
+
+            <tr>
+                
+                <td class="label"><label for="fname">Rekomendasi Guru BP/BK Sekolah Asal (SMP/MTs)</label></td>
+                <td><select name="asu" id="asu">
+                    <optgroup label="Rekomendasi">
+                        <option value="hjksffgkaufuagf">hjksffgkaufuagf</option>
+                        <option value="sjffhkdsgsdygklfdh">sjffhkdsgsdygklfdh</option>
+                        <option value="jdsgkfudszfyidgik">jdsgkfudszfyidgik</option>
+                    </optgroup>    
+                </select></td>
+                
+            </tr>
+
+            <tr>
+                
+                <td class="label"><label for="fname">Pilihan Sendiri</label></td>
+                <td><select name="asu" id="asu">
+                    <optgroup label="Jurusan">
+                        <option value="RPL">RPL</option>
+                        <option value="LISTRIK">LISTRIK</option>
+                        <option value="OTOMOTIF">OTOMOTIF</option>
+                        <option value="MESIN">MESIN</option>
+                    </optgroup>    
+                </select></td>
+                
+            </tr>
+
+            <tr>
+                
+                    <td colspan="2"><h4>G. KESANGGUPAN PEMOHONAN</h4></td>
+                
+            </tr>
+
+            <tr>
+                    <td colspan="2" style="line-height: 25px;">
+                        Saya sanggup memenuhi dan menaati segala ketentuan tata/tertib yang di tetapkan oleh pihak 
+                        <b>SMA NEGERI 1 PAYUNG</b> sebagai berikut: <b>1.</b>Berakhlak sesuai dengan peraturan sekolah dan 
+                        Visi/SMA Negeri 1 Payung.  <b>2.</b>Berseragam/Berpakaian sesuai dengan ketentuan sekolah. <b>3.</b>
+                        Menataati dan menghormati Pimpinan SMA Negeri 1 Payung dan Tenaga Pendidikan seta Kependidikan juga 
+                        menjaga Almamater. <b>4.</b>Menyerahkan semua berkas persyaratan sesuai dengan ketentuan yang telah 
+                        di tetapkan. <b><i>Catatan:Bila saya melanggar ketentuan/aturan tersebut,maka saya bersedia menerima 
+                        segala teguran atau nasihat bahkan sanggup untuk dikeluarkan dari SMA Negeri 1 Payung.</i></b> 
+                        Periksa kembali isian formulir Anda sebelum divalidasi,jika sudah yakin semua isian benar klik 
+                        <b>Kirim Formulir.</b> Terimaksih atas kepercayaan anda terhadap <b>SMA Negeri 1 Payung</b> sebagai 
+                        pilihan untuk meraih masa depan.
+                    </td>
+            </tr>
+
+            <tr>
+                
+                    <td colspan="2">
+                        <input type="checkbox" id="name7" name="name7" value="SHUN">
+                        <label for="name7">Saya setuju dengan <sub style="color: aqua;vertical-align: top;">peraturan ini</sub>. <sub style="color: red;vertical-align: top;">*</sub></label>
+                    </td>    
+                
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center" >
+                    <input class="button" type="submit" value="Kirim Formulir" >
+                    <input class="button" type="reset" value="Hapus" >
+                </td>
+            </tr>
+        </table>
+    </form>
+    </center>
+    
+</body>
+</html>

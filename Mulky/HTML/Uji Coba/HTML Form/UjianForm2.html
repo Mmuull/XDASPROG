@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ujian Form 2</title>
+    <style>
+        body{
+            background-color: whitesmoke;
+        }
+        fieldset{
+            width: 30%;
+            padding: 10px;
+            margin: auto;
+            margin-top: 5%;
+            background-color: white;
+            border: solid 5px pink;
+        }
+        h1{
+            text-align: center;
+        }
+        input.panjang{
+            width: 100px;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="UjianForm1.html">
+        <fieldset>
+            <h1>Daftar Akun Kelas</h1>
+
+            <label for="fnama">Nama Lengkap</label><br>
+            <input type="text" name="fnama" id="fnama" placeholder="Nama Depan" required>
+            <input type="text" name="lnama" id="lnama" placeholder="Nama Belakang" required>
+            <br><br>
+            <label for="kelas">Kelas</label><br>
+            <input list="listkelas" name="" id="kelas" required>
+            <datalist id="listkelas">
+                
+                <option value="XK1">XK1</option>
+                <option value="XK2">XK2</option>
+                <option value="XK3">XK3</option>
+                <option value="XK4">XK4</option>
+            
+                <option value="XIK1">XIK1</option>
+                <option value="XIK2">XIK2</option>
+                <option value="XIK3">XIK3</option>
+                <option value="XIK4">XIK4</option>
+            
+                <option value="XIIK1">XIIK1</option>
+                <option value="XIIK2">XIIK2</option>
+                <option value="XIIK3">XIIK3</option>
+                <option value="XIIK4">XIIK4</option>
+                
+            </datalist>
+            <br><br>
+            <label for="">Jenis Kelamin</label><br>
+            <input type="radio" name="jeniskelamin" id="laki-laki" required>
+            <label for="laki-laki">Laki-laki</label>
+            <span style="margin-left: 20px;"></span>
+            <input type="radio" name="jeniskelamin" id="perempuan" required>
+            <label for="perempuan">Perempuan</label>
+            <br><br>
+            <label for="">Hobi</label><br>
+            <input type="checkbox" name="hobi" id="membaca">
+            <label for="membaca">Membaca</label>
+            <span style="margin-left: 20px;"></span>
+            <input type="checkbox" name="hobi" id="menulis">
+            <label for="menulis">Menulis</label>
+            <br>
+            <input type="checkbox" name="hobi" id="bermain">
+            <label for="bermain">Bermain</label>
+            <span style="margin-left: 28px;"></span>
+            <input type="checkbox" name="hobi" id="belajar">
+            <label for="belajar">Belajar</label>
+            <br><br>
+            <label for="warna">Warna Kesukaan</label><br>
+            <input type="color" name="warna" id="warna" required>
+            <br><br>
+            <label for="tempatlahir">Tempat Lahir</label><br>
+            <input type="text" name="tempatlahir" id="tempatlahir" placeholder="Nama Kota" required>
+            <br><br>
+            <label for="tgllahir">Tanggal Lahir</label><br>
+            <input type="date" name="tgllahir" id="tgllahir" required>
+            <br><br>
+            <label for="tempattinggal">Tempat Tinggal</label><br>
+            <textarea name="tempattinggal" id="tempattinggal" cols="30" rows="10" required></textarea>
+            <br><br>
+            <label for="telp">Nomor Telepon</label><br>
+            <input type="tel" name="telp" id="telp" placeholder="0812-3456-7890" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" required><br>
+            <small>Format : 0812-3456-7890</small>
+            <br><br>
+            <label for="email">Alamat Email</label><br>
+            <input type="email" name="email" id="email" placeholder="admin@mail.com" required>
+            <br>
+            <p>Sudah punya akun? <a href="UjianForm1.html"><input type="button" value="Login"></a></p>
+
+            <input type="reset" value="Reset">
+            <input type="submit" id="daftar" value="Daftar">  
+
+        </fieldset>
+    </form>
+</body>
+</html>
