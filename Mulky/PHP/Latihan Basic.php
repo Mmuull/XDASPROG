@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Latihan 1 PHP</title>
+    <title>Latihan Basic PHP</title>
 </head>
 <body>
     <?php
@@ -11,9 +11,19 @@
         $y = $x + $b;
         $z = $a + $x;
 
+        $q = 5.1;
+        $w = true;
+        $e = "Hello";
+        $r = array ("qwerty","asdfgh");
+
         echo "<h1>" .$x. "</h1>";
         echo "<h2>" .$y. "</h2>";
         echo "<h3>" .$z. "</h3>";
+
+        echo var_dump($q)."<br>";
+        echo var_dump($w)."<br>";
+        echo var_dump($e)."<br>";
+        echo var_dump($r)."<br>";
     ?>
     <br>
     <h1><?php echo $x?></h1>
