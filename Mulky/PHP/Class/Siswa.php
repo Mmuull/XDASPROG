@@ -1,5 +1,5 @@
 <?php
-    class siswa
+    class Siswa
     {
         public $no_siswa;
         public $nama_siswa;

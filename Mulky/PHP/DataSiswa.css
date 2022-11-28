@@ -1,0 +1,40 @@
+div{
+    padding: 5px;
+}
+table{
+    width: 100%;
+    margin: auto;
+}
+table, th, td{
+    border: black solid 2px;
+}
+td.nomor{
+    width: 20%;
+}
+td.nama{
+    width: 30%;
+}
+td.usia{
+    width: 20%;
+}
+.button{
+    width: 90px; height: 40px;
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: #0291da;
+    color: white;
+    cursor: pointer;
+}
+.button:hover{
+    width: 90px; height: 40px;
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+}
+.content{
+    width: 60%;
+    margin: auto;
+    border: black solid 2px;
+}

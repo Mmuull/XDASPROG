@@ -1,5 +1,5 @@
 <?php
-    class sekolah
+    class Sekolah
     {
         public $nama_sekolah;
         public $kepala_sekolah;
