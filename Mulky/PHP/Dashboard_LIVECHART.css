@@ -1,0 +1,150 @@
+body{
+    margin: 0; padding: 0;
+    background-color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav.navbar{
+    width: 100%; 
+    margin: 0; padding: 0;
+    position: absolute fixed ; top: 0;
+    display: inline-block;
+    background-color: white;
+    overflow: hidden;
+    list-style-type: none;
+    /* border: black solid 2px; */
+    box-shadow: 2px 2px 2px #aaaaaa;
+}
+
+img.navbar{
+    height: 52px;
+    margin: auto; display: inline-block;
+}
+
+a{
+    color: black; text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    padding: 16px 24px;
+    text-decoration: none;
+    vertical-align: middle;
+    position: relative;
+    /* border: black solid 2px; */
+}
+
+a.navbar-left {
+    font-weight: bold;
+    display: inline-block;
+    justify-items: left;
+}
+
+a.navbar-right {
+    font-weight: bold;
+    float: right;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+a.navbar:hover {
+    color: #3B97FC;
+}
+
+/* Header Box */
+div.page-header{
+    position: absolute static;  
+    margin: 15px 0 16px; padding: 0 15px;
+}
+div.page-header-box{
+    width: fit-content; height: inherit;
+    display: inline-block;
+}
+div.page-header-box-content{
+    width: fit-content; height: fit-content;
+    margin: 0 15px 0; padding: 0;
+    vertical-align: bottom; display: inline-flex;
+    /* border: black solid 1px; */
+}
+div.arrow{
+    height: 40px;
+    margin: auto;
+}
+div.sub_title{
+    font-size: 14px;
+    margin: 0; padding: 0;
+    opacity: 60%;
+}
+div.title{
+    display: inline-block;
+    margin-top: 0px;
+    /* margin-bottom: 8px; */
+}
+div.page-header-tab{
+    width: fit-content; height: inherit;
+    display: inline-block;
+}
+
+nav.page-header-tab{
+    width: fit-content;
+}
+
+/* Header Tab */
+ul{
+    /* height: 50px; */
+    margin: 0; padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    /* border: black solid 2px; */
+}
+
+li {
+    float: left;
+}
+  
+li.page-header-tab-content{
+    position: relative;
+    padding: 0;
+    color: black; font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 60%;
+}
+li.active{
+    opacity: 100%;
+}
+
+li:hover{
+    opacity: 100%;
+}
+
+/* Content-option */
+div.page-option{
+    padding-left: 20px;
+    padding-right: 30px;
+}
+div.page-option-box{
+    width: fit-content;
+    display: inline;
+}
+div.page-option-box-v2{
+    justify-items: end;
+    float: right;
+}
+span.page-option-box{
+    margin: 0 5px 0;
+}
+select{
+    padding: 0 24px 0 8px;
+}
+#btn:active{
+    box-shadow: 2px 2px 2px #aaaaaa;
+}
+.input{
+    height: 26px;
+}
+button.page-option-box-content{
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    color: #3B97FC;
+}

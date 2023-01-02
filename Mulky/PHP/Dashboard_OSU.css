@@ -1,0 +1,77 @@
+/* Navbar Styles */
+ul {
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    list-style-type: none;
+    background-color: #252525;
+}
+li {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+li a{
+    font-weight: bold; color: white;
+    font-family: sans-serif;
+    text-align: center;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #EE60AA;
+}
+img.navbar{
+    width: 100px; height: 55 px;
+    margin: auto; display: block;
+}
+
+/* Display 1 */
+div.content{
+    height: 600px;
+    background-color: #171717;
+}
+
+/* Main Styles */
+div.main{
+    width: 30%; height: 600px;
+}
+
+div.image{
+    margin-top: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 40px;
+}
+img{
+    width: 100%;
+}
+
+div.button{
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 80px;
+}
+button{
+    width: 120px; height: 60px;
+    background-color: #EE60AA; border: white solid 5px;
+    color: white; text-decoration: none;
+    margin: auto; display: block;
+    border-radius: 5px;
+}
+a.button{
+    
+}
+
+/* Preview Styles */
+div.preview{
+    width: 70%;  height: 600px;
+    
+    background-color: #171717;
+    background-image:url(Media/Image/image_backgroundimage.jpg);
+    background-size: 100%; background-position: center;
+    background-repeat: no-repeat;
+}

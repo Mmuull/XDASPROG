@@ -2,20 +2,22 @@ div{
     padding: 5px;
 }
 table{
-    width: 100%;
+    width: 50%;
     margin: auto;
+    border: black solid 2px;
+    /* background-color: black; */
 }
-table, th, td{
+th.nomor, td.nomor{
+    width: 10%;
     border: black solid 2px;
 }
-td.nomor{
-    width: 20%;
+th.nama, td.nama{
+    width: 40%;
+    border: black solid 2px;
 }
-td.nama{
-    width: 30%;
-}
-td.usia{
+th.usia, td.usia{
     width: 20%;
+    border: black solid 2px;
 }
 .button{
     width: 90px; height: 40px;
